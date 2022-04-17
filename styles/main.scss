@@ -1,0 +1,1031 @@
+@import "base/reset";
+@import "fonts/fonts";
+@import "mixins";
+@import "variables";
+// Desktop size
+.conteiner-dreamshare {
+  @include box(1440px, 700px);
+  margin: 0 auto;
+
+  &__image {
+    background-image: url(../image/desktop/Background-desktop.png);
+    @include box(1440px, 700px);
+  }
+  &__header {
+    @include box(1000px, 36px);
+    display: flex;
+    position: relative;
+    bottom: 668px;
+    left: 248px;
+    right: 0px;
+    &__logo {
+      @include font("Montserrat", 20px, 700);
+      line-height: 24px;
+      display: flex;
+      align-items: flex-end;
+      color: #ffffff;
+    }
+  }
+  &__register {
+    display: flex;
+    margin-left: 596px;
+  }
+  &__login {
+    @include font("Montserrat", 14px, 400);
+    font-style: normal;
+    line-height: 17px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  &__no-active {
+    padding-top: 10px;
+  }
+  &__active {
+    @include box(90px, 36px);
+    border: 2px solid #ffffff;
+    box-sizing: border-box;
+    border-radius: 40px;
+    margin-left: 19px;
+    padding: 8px 0 0 15px;
+  }
+  &__sign {
+    @extend .conteiner-dreamshare__login;
+  }
+  &__box-text {
+    @include box(470px, 300px);
+    position: relative;
+    bottom: 524px;
+    right: 0px;
+    left: 485px;
+  }
+  &__heading {
+    @include font("Montserrat", 52px, 700);
+    font-style: normal;
+    line-height: 63px;
+    text-align: center;
+    color: #ffffff;
+    &__text {
+      @include font("Roboto", 24px, 700);
+
+      line-height: 24px;
+      display: flex;
+      align-items: flex-end;
+      text-align: center;
+      color: #f7f3f2;
+      margin: 29px 0 0 35px;
+    }
+  }
+  &__button-find {
+    @include box(225px, 40px);
+    background: $color-button;
+    border-radius: 40px;
+    margin: 33px 0 0 120px;
+    &__button-text {
+      @include font("Montserrat", 14px, 700);
+
+      line-height: 17px;
+      display: flex;
+      align-items: flex-end;
+      text-align: center;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 12px 20px;
+    }
+  }
+}
+.dreams {
+  @include box(1440px, 461px);
+  margin: 0 auto;
+  &__heading {
+    @include font("Montserrat", 26px, 700);
+
+    line-height: 32px;
+    color: #444444;
+    margin: 89px 0 0 549px;
+  }
+  &__box-foto {
+    @include box(940px, 400px);
+    margin: 35px 0 0 250px;
+    display: flex;
+  }
+
+  &__image-step-one {
+    @include box(300px, 400px);
+    background-image: url(../image/desktop/Step-1-image-desktop.png);
+  }
+  &__step-one {
+    position: relative;
+    bottom: 180px;
+    left: 25px;
+  }
+  &__step-box {
+    @include box(70px, 20px);
+    background: #ff4e50;
+    border-radius: 40px;
+    &__step-text {
+      @include font("Montserrat", 10px, 400);
+
+      line-height: 12px;
+      display: flex;
+      align-items: flex-end;
+      letter-spacing: 2px;
+      color: #ffffff;
+      padding: 5px 0 0 14px;
+    }
+  }
+  &__heading-text {
+    @include box(250px, 58px);
+    @include font("Montserrat", 24px, 700);
+    font-style: normal;
+    line-height: 26px;
+    display: flex;
+    align-items: flex-end;
+    color: #ffffff;
+    margin-top: 15px;
+  }
+  &__step-small-text {
+    @include box(250px, 57px);
+    @include font("Roboto", 14px, 300);
+
+    line-height: 14px;
+    display: flex;
+    align-items: flex-end;
+    color: #e3e3e3;
+    margin-top: 10px;
+  }
+  &__image-step-two {
+    @include box(300px, 400px);
+    margin-left: 20px;
+    background-image: url(../image/desktop/Step-2-image-desctop.png);
+  }
+  &__step-two {
+    position: relative;
+    bottom: 180px;
+    left: 45px;
+  }
+  &__step-box-two {
+    @include box(70px, 20px);
+    background: #ff4e50;
+    border-radius: 40px;
+    margin-top: 25px;
+  }
+  &__heading-text-2 {
+    @extend .dreams__heading-text;
+    @include box(250px, 29px);
+    margin-top: 25px;
+  }
+  &__image-step-three {
+    @include box(300px, 400px);
+    margin-left: 20px;
+    background-image: url(../image/desktop/Step-3-image-desctop.png);
+  }
+  &__step-three {
+    position: relative;
+    bottom: 180px;
+    left: 45px;
+  }
+  &__step-box-three {
+    @extend .dreams__step-box;
+  }
+  &__heading-text-3 {
+    @extend .dreams__heading-text;
+  }
+}
+.holiday {
+  @include box(1440px, 361px);
+  margin: 0 auto;
+  &__heading {
+    @include font("Montserrat", 26px, 700);
+
+    line-height: 32px;
+    color: #444444;
+    margin: 89px 0 0 476px;
+  }
+  &__image-block {
+    display: flex;
+    margin: 35px 0 0 250px;
+  }
+  &__image-block-table-mobile {
+    display: none;
+  }
+  &__hunter-block {
+    @include box(221px, 205px);
+  }
+  &__foto-hunter {
+    margin-left: 50px;
+  }
+  &__oval-red {
+    @include box(32px, 32px);
+    border-radius: 50%;
+    background: #ff4e50;
+    position: relative;
+    left: 140px;
+    bottom: 30px;
+    box-shadow: 0px 0px 0px 6px white;
+    &__item-music {
+      margin: 8px 8px;
+    }
+  }
+  &__name-text {
+    @include font("Montserrat", 14px, 700);
+    font-style: normal;
+    line-height: 17px;
+    text-align: center;
+    color: #444444;
+    text-align: center;
+    margin: -13px 0px 0px 0px;
+  }
+  &__about-text {
+    @include box(221px, 38px);
+    @include font("Roboto", 14px, 300);
+    line-height: 14px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    color: #666666;
+    margin-top: 12px;
+  }
+  &__bennett-block {
+    @include box(221px, 205px);
+
+    margin-left: 19px;
+  }
+  &__foto-bennett {
+    margin-left: 50px;
+  }
+  &__oval-green {
+    @include box(32px, 32px);
+    border-radius: 50%;
+    background: #19d4ca;
+    position: relative;
+    left: 140px;
+    bottom: 30px;
+    box-shadow: 0px 0px 0px 6px white;
+    &__item-brush {
+      margin: 8px 8px;
+    }
+  }
+  &__wells-block {
+    @include box(221px, 224px);
+
+    margin-left: 19px;
+  }
+  &__foto-wells {
+    margin-left: 50px;
+  }
+  &__oval-yellow {
+    @include box(32px, 32px);
+    border-radius: 50%;
+    background: #ffa710;
+    position: relative;
+    left: 140px;
+    bottom: 30px;
+    box-shadow: 0px 0px 0px 6px white;
+    &__item-camera {
+      margin: 8px 8px;
+    }
+  }
+  &__about-text-other {
+    @include box(221px, 57px);
+    @include font("Roboto", 14px, 300);
+
+    line-height: 14px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    color: #666666;
+    margin-top: 12px;
+  }
+  &__pierce-block {
+    @include box(221px, 224px);
+
+    margin-left: 19px;
+  }
+  &__foto-pierce {
+    margin-left: 50px;
+  }
+  &__oval-blue {
+    @include box(32px, 32px);
+    border-radius: 50%;
+    background: #667df3;
+    position: relative;
+    left: 140px;
+    bottom: 30px;
+    box-shadow: 0px 0px 0px 6px white;
+    &__item-airplane {
+      margin: 4px 6px;
+    }
+  }
+  &__button-see-other {
+    @include box(180px, 40px);
+    border: 2px solid #ff4e50;
+    box-sizing: border-box;
+    border-radius: 40px;
+    background: $color-button-two;
+    margin: 36px auto;
+    &__button-text-partners {
+      @extend .conteiner-dreamshare__button-find__button-text;
+      color: #ff4e50;
+    }
+  }
+}
+.discover-holiday {
+  @include box(1440px, 100%);
+  margin: 0 auto;
+  &__heading-discover {
+    @include font("Montserrat", 26px, 700);
+    line-height: 32px;
+    text-align: center;
+    color: #444444;
+    margin-top: 89px;
+  }
+  &__block-discover-img {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 310px 310px 310px;
+    gap: 20px 20px;
+    margin: 35px 0 0 250px;
+    &__sport-box {
+      background-image: url(../image/desktop/sport-desctop.png);
+      @include box(300px, 310px);
+      &__heading-sport {
+        @include font("Montserrat", 22px, 700);
+
+        line-height: 27px;
+        text-align: center;
+        color: #ffffff;
+        margin-top: 142px;
+      }
+    }
+  }
+  &__health-box {
+    background-image: url(../image/desktop/health-desctop.png);
+    &__heading-health {
+      @extend .discover-holiday__block-discover-img__sport-box__heading-sport;
+    }
+  }
+  &__extreme-box {
+    background-image: url(../image/desktop/extream-desctop.png);
+    &__heading-extreme {
+      @include box(187px, 54px);
+      @include font("Montserrat", 22px, 700);
+
+      line-height: 27px;
+      color: #ffffff;
+      margin: 128px 0 0 56px;
+    }
+  }
+  &__games-box {
+    background-image: url(../image/desktop/games-desctop.png);
+    &__heading-games {
+      @extend .discover-holiday__block-discover-img__sport-box__heading-sport;
+    }
+  }
+  &__culture-education-box {
+    background-image: url(../image/desktop/culture-desctop.png);
+    @include box(620px, 310px);
+    &__heading-culture-education {
+      @extend .discover-holiday__block-discover-img__sport-box__heading-sport;
+    }
+  }
+  &__relax-box {
+    background-image: url(../image/desktop/relax-desctop.png);
+    grid-column: 1/3;
+    grid-row: 3/4;
+    &__relax-education {
+      @extend .discover-holiday__block-discover-img__sport-box__heading-sport;
+    }
+  }
+  &__trevelling-box {
+    background-image: url(../image/desktop/travelling-desctop.png);
+    grid-column: 3/4;
+    grid-row: 3/4;
+    &__trevelling-education {
+      @extend .discover-holiday__block-discover-img__sport-box__heading-sport;
+    }
+  }
+}
+.holiday {
+  @include box(1440px, 100%);
+  margin: 0 auto;
+  &__heading-holiday-activity {
+    @extend .discover-holiday__heading-discover;
+    margin-top: 95px;
+  }
+  &__holiday-text {
+    @include font("Roboto", 18px, 300);
+
+    line-height: 14px;
+    text-align: center;
+    color: #666666;
+    margin-top: 43px;
+  }
+  &__button-holiday-activity {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+  &__button-search {
+    @include box(172px, 40px);
+    border-radius: 40px;
+    background: $color-button;
+    margin-left: 10px;
+  }
+  &__search-text {
+    @include font("Montserrat", 14px, 700);
+
+    line-height: 17px;
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    padding: 12px 0 0 30px;
+  }
+  input[type="enter"] {
+    @include box(299px, 40px);
+    background: #ffffff;
+    border: 1px solid #d4d4d4;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
+    border-radius: 3px;
+  }
+  input::placeholder {
+    @include font("Roboto", 14px, 300);
+
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #999999;
+    padding: 14px 15px;
+  }
+}
+
+.dreamshare-company-partners {
+  @include box(1440px, 224px);
+  margin: 0 auto 43px;
+
+  hr {
+    width: 1440px;
+    height: 2px;
+    background: #ff4e50;
+    margin-top: 100px;
+  }
+  .company-menu {
+    display: flex;
+    margin: 38px 0 0 248px;
+    &__dreamshare {
+      @include font("Montserrat", 16px, 400);
+      font-style: normal;
+      line-height: 20px;
+      color: #ff4e50;
+    }
+    &__company-list {
+      display: flex;
+    }
+    &__company-block {
+      margin-left: 108px;
+    }
+    &__company {
+      @include font("Montserrat", 14px, 700);
+      font-style: normal;
+      line-height: 17px;
+      color: #444444;
+    }
+    &__list-name {
+      font-family: "Roboto";
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 26px;
+      color: #999999;
+      text-decoration: none;
+    }
+    &__partners {
+      @extend .company-menu__company;
+      margin-left: 100px;
+    }
+    &__designed-block {
+      margin-left: 287px;
+    }
+    &__designed {
+      @include font("Montserrat", 10px, 700);
+      line-height: 12px;
+      letter-spacing: 1px;
+      color: #cccccc;
+      margin-left: 27px;
+    }
+    &__areto {
+      margin-top: 7px;
+    }
+    &__list-mobile-1 {
+      display: none;
+    }
+    &__list-mobile-2 {
+      display: none;
+    }
+  }
+}
+// Tablet size
+@media screen and (max-width: 1460px) {
+  .conteiner-dreamshare {
+    @include box(768px, 700px);
+    &__image {
+      background-image: url(../image/tablet/Background-tablet.png);
+      @include box(768px, 700px);
+    }
+    &__header {
+      @include box(700px, 36px);
+      left: 48px;
+    }
+    &__register {
+      margin-left: 365px;
+    }
+    &__box-text {
+      left: 149px;
+    }
+  }
+  .dreams {
+    @include box(768px, 461px);
+    &__heading {
+      font-size: 22px;
+      line-height: 27px;
+      margin: 94px 0 0 240px;
+    }
+    &__box-foto {
+      @include box(236px, 400px);
+      margin: 35px 0 0 10px;
+    }
+    &__image-step-one {
+      @include box(236px, 400px);
+      background-image: url(../image/tablet/Step-1-tablet.png);
+    }
+    &__heading-text {
+      @include box(196px, 58px);
+      line-height: 14px;
+      margin: 0px;
+    }
+    &__step-one {
+      left: 20px;
+    }
+    &__step-small-text {
+      @include box(196px, 76px);
+    }
+    &__image-step-two {
+      @include box(236px, 400px);
+      background-image: url(../image/tablet/Step-2-tablet.png);
+    }
+    &__step-two {
+      left: 40px;
+    }
+    &__heading-text-2 {
+      @include box(150px, 29px);
+      display: flex;
+      align-items: flex-end;
+      margin-top: 14px;
+    }
+
+    &__image-step-three {
+      @include box(236px, 400px);
+      background-image: url(../image/tablet/Step-3-tablet.png);
+    }
+    &__step-three {
+      left: 40px;
+    }
+  }
+  .holiday {
+    @include box(768px, 605px);
+    &__heading {
+      font-size: 22px;
+      line-height: 27px;
+      margin: 94px 0 0 176px;
+    }
+
+    &__image-block {
+      display: none;
+    }
+    &__image-block-table-mobile {
+      display: inline;
+    }
+    &__hunter-wells-block {
+      display: flex;
+      @include box(492px, 205px);
+
+      margin: 35px 0 0 138px;
+    }
+    &__hunter-block {
+      @include box(236px, 205px);
+    }
+    &__about-text {
+      @include box(236px, 38px);
+    }
+    &__wells-block {
+      @include box(236px, 224px);
+      margin-left: 20px;
+    }
+    &__about-text-other {
+      @include box(236px, 57px);
+    }
+    &__bennett-pierce-block {
+      display: flex;
+      @include box(492px, 205px);
+
+      margin: 35px 0 0 138px;
+    }
+    &__bennett-block {
+      @include box(236px, 205px);
+      margin: 0;
+    }
+    &__pierce-block {
+      @include box(236px, 205px);
+      margin-left: 20px;
+    }
+    &__button-see-other {
+      margin-top: 40px;
+    }
+  }
+  .discover-holiday {
+    @include box(748px, 100%);
+    &__heading-discover {
+      font-size: 22px;
+      line-height: 27px;
+      margin-top: 94px;
+    }
+    &__block-discover-img {
+      grid-template-columns: 236px 236px 236px;
+      grid-template-rows: 310px 310px 310px;
+      margin: 35px 0 0 10px;
+      &__sport-box {
+        background-image: url(../image/tablet/sport-tablet.png);
+
+        @include box(236px, 310px);
+
+        &__heading-sport {
+          display: flex;
+          @include box(150px, 54px);
+          margin: 120px 0 0 45px;
+        }
+      }
+    }
+    &__health-box {
+      @include box(236px, 310px);
+      background-image: url(../image/tablet/health-tablet.png);
+
+      &__heading-health {
+        margin-top: 128px;
+      }
+    }
+    &__extreme-box {
+      @include box(236px, 310px);
+      background-image: url(../image/tablet/extreme-tablet.png);
+      &__heading-extreme {
+        @include box(206px, 54px);
+        display: flex;
+        align-items: flex-end;
+        text-align: center;
+        margin: 128px 0 0 15px;
+      }
+    }
+    &__games-box {
+      @include box(236px, 310px);
+      background-image: url(../image/tablet/game-tablet.png);
+      &__heading-games {
+        @include box(206px, 27px);
+
+        margin: 142px 0 0 80px;
+      }
+    }
+    &__culture-education-box {
+      @include box(492px, 310px);
+      background-image: url(../image/tablet/culture-tablet.png);
+      &__heading-culture-education {
+        @include box(261px, 27px);
+        margin: 142px 0 0 116px;
+      }
+    }
+    &__relax-box {
+      @include box(492px, 310px);
+      background-image: url(../image/tablet/relax-tablet.png);
+      &__relax-education {
+        @include box(277px, 27px);
+        margin: 142px 0 0 108px;
+      }
+    }
+    &__trevelling-box {
+      @include box(238px, 310px);
+      background-image: url(../image/tablet/travel-tablet.png);
+
+      &__trevelling-education {
+        margin: 142px 0 0 60px;
+      }
+    }
+  }
+  .holiday {
+    @include box(768px, 100%);
+    &__heading-holiday-activity {
+      font-size: 22px;
+      line-height: 27px;
+      margin-top: 94px;
+    }
+  }
+  .dreamshare-company-partners {
+    @include box(768px, 224px);
+    margin-bottom: 20px;
+    hr {
+      width: 768px;
+    }
+    .company-menu {
+      margin-left: 39px;
+      &__company-block {
+        margin-left: 108px;
+      }
+      &__partners {
+        margin-left: 56px;
+      }
+      &__designed-block {
+        margin-left: 118px;
+      }
+    }
+  }
+}
+// Mobile size
+@media screen and (max-width: 850px) {
+  .conteiner-dreamshare {
+    @include box(320px, 540px);
+    &__image {
+      background-image: url(../image/mobile/Background.png);
+      @include box(310px, 540px);
+    }
+    &__header {
+      @include box(200px, 36px);
+      bottom: 540px;
+      left: 75px;
+      display: inline-table;
+      &__logo {
+        position: relative;
+        top: 150px;
+      }
+    }
+
+    &__register {
+      margin-left: 0px;
+    }
+    &__box-text {
+      @include box(281px, 300px);
+      bottom: 395px;
+      margin: 0px;
+      left: 20px;
+    }
+    &__heading {
+      font-size: 30px;
+      line-height: 37px;
+      &__text {
+        font-size: 18px;
+        margin: 5px 0 0 10px;
+      }
+    }
+    &__button-find {
+      @include box(280px, 40px);
+      margin: 15px 0 0 0px;
+      &__button-text {
+        padding: 12px 47px;
+      }
+    }
+  }
+  .dreams {
+    @include box(320px, 100%);
+    &__heading {
+      margin: 34px 0 0 16px;
+    }
+    &__box-foto {
+      display: contents;
+    }
+    &__block-one {
+      margin: 15px 0 0 10px;
+      @include box(300px, 240px);
+    }
+    &__image-step-one {
+      background-image: url(../image/mobile/Step-1-image.png);
+      @include box(300px, 240px);
+    }
+    &__heading-text {
+      @include box(250px, 58px);
+      margin-top: 15px;
+    }
+    &__step-small-text {
+      @include box(250px, 57px);
+      margin-top: 10px;
+    }
+    &__block-two {
+      @include box(300px, 240px);
+    }
+    &__image-step-two {
+      background-image: url(../image/mobile/Step-2-image.png);
+      @include box(300px, 240px);
+      margin: 10px 0 0 10px;
+    }
+    &__step-two {
+      margin-left: -10px;
+    }
+    &__heading-text-2 {
+      @include box(300px, 29px);
+      margin-top: 14px;
+    }
+    &__block-three {
+      @include box(300px, 240px);
+    }
+    &__image-step-three {
+      background-image: url(../image/mobile/Step-3-image.png);
+      @include box(300px, 240px);
+      margin: 10px 0 0 10px;
+    }
+    &__step-three {
+      margin-left: -10px;
+    }
+  }
+  .holiday {
+    @include box(320px, 100%);
+    &__heading {
+      @include box(280px, 54px);
+      display: flex;
+
+      text-align: center;
+      margin: 36px 0 0 20px;
+    }
+    &__hunter-wells-block {
+      display: inline;
+    }
+    &__hunter-block {
+      margin: 14px 0 0 42px;
+    }
+    &__wells-block {
+      margin: 16px 0 0 42px;
+    }
+    &__bennett-pierce-block {
+      display: inline;
+    }
+    &__bennett-block {
+      margin: 16px 0 0 42px;
+    }
+    &__pierce-block {
+      margin: 16px 0 0 42px;
+    }
+    &__button-see-other {
+      @include box(280px, 40px);
+      &__button-text-partners {
+        padding: 12px 0px 0 74px;
+      }
+    }
+  }
+  .discover-holiday {
+    @include box(320px, 100%);
+    &__heading-discover {
+      @include box(250px, 54px);
+
+      margin: 35px 0 0 30px;
+    }
+    &__block-discover-img {
+      display: contents;
+      &__sport-box {
+        background-image: url(../image/mobile/sport.png);
+        @include box(300px, 120px);
+        margin: 33px 0 0 10px;
+        &__heading-sport {
+          margin: 0 auto;
+          position: relative;
+          top: 20px;
+        }
+      }
+    }
+    &__health-box {
+      background-image: url(../image/mobile/health.png);
+      @include box(300px, 120px);
+      margin: 10px 10px;
+      &__heading-health {
+        margin: 0 auto;
+        position: relative;
+        top: 33px;
+      }
+    }
+    &__extreme-box {
+      background-image: url(../image/mobile/extream.png);
+      margin: 0px 10px;
+      @include box(300px, 120px);
+      &__heading-extreme {
+        margin: 0 auto;
+        position: relative;
+        top: 33px;
+      }
+    }
+    &__games-box {
+      background-image: url(../image/mobile/games.png);
+      margin: 10px 10px;
+      @include box(300px, 120px);
+      &__heading-games {
+        margin: 0 auto;
+        position: relative;
+        top: 47px;
+        @include box(80px, 27px);
+      }
+    }
+    &__culture-education-box {
+      background-image: url(../image/mobile/culture.png);
+      margin: 10px 10px;
+      @include box(300px, 120px);
+      &__heading-culture-education {
+        margin: 0 auto;
+        position: relative;
+        top: 47px;
+      }
+    }
+    &__relax-box {
+      background-image: url(../image/mobile/relax.png);
+      margin: 10px 10px;
+      @include box(300px, 120px);
+      &__relax-education {
+        margin: 0 auto;
+        position: relative;
+        top: 47px;
+      }
+    }
+    &__trevelling-box {
+      background-image: url(../image/mobile/travelling.png);
+      margin: 10px 10px;
+      @include box(300px, 120px);
+      &__trevelling-education {
+        margin: 0 auto;
+        position: relative;
+        top: 47px;
+        @include box(120px, 27px);
+      }
+    }
+  }
+  .holiday {
+    @include box(320px, 100%);
+    &__heading-holiday-activity {
+      margin-top: 35px;
+    }
+    &__holiday-text {
+      margin-top: 9px;
+    }
+    &__button-holiday-activity {
+      display: block;
+      @include box(280px, 90px);
+      margin: 15px 0 0 20px;
+    }
+    input[type="enter"] {
+      @include box(280px, 40px);
+    }
+    &__button-search {
+      @include box(280px, 40px);
+      margin: 10px 0 0 0;
+    }
+    &__search-text {
+      padding: 12px 0 0 87px;
+    }
+  }
+  .dreamshare-company-partners {
+    @include box(320px, 100%);
+    margin-bottom: 22px;
+    hr {
+      width: 320px;
+    }
+    .company-menu {
+      display: block;
+      @include box(320px, 100%);
+      margin: 0;
+      &__dreamshare {
+        padding: 21px 0 0 100px;
+      }
+      &__company-list {
+        display: inline-block;
+      }
+      &__company-block {
+        margin: 13px 0 0 125px;
+      }
+      &__list {
+        display: none;
+      }
+      &__list-mobile-1 {
+        display: flex;
+        position: relative;
+        right: 70px;
+      }
+      &__list-name {
+        margin-left: 10px;
+      }
+      &__list-mobile-2 {
+        display: flex;
+        position: relative;
+        right: 50px;
+      }
+      &__partners {
+        margin: 6px 0 0 127px;
+      }
+      &__designed-block {
+        margin: 14px 0 0 105px;
+      }
+      &__designed {
+        margin-left: 15px;
+      }
+    }
+  }
+}
